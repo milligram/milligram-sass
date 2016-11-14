@@ -2,7 +2,7 @@
 // Grid
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
 
-// .container is main centered wrapper with a max width of 1120rem (1120px)
+// .container is main centered wrapper with a max width of 112.0rem (1120px)
 .container
 	margin: 0 auto
 	max-width: 112.0rem
@@ -24,15 +24,11 @@
 	&.row-no-padding
 		padding: 0
 
-		& > .column
+		&> .column
 			padding: 0
 
 	&.row-wrap
 		flex-wrap: wrap
-
-	// & + .row
-	// 	margin-top: -.5rem
-	// 	padding-top: 0
 
 	// Vertically Align Columns
 	// .row-* vertically aligns every .col in the .row
@@ -57,16 +53,6 @@
 		margin-left: 0
 		max-width: 100%
 		width: 100%
-
-		// .column-* vertically aligns an individual .column
-		.col-top
-			align-self: flex-start
-
-		.col-bottom
-			align-self: flex-end
-
-		.col-center
-			align-self: center
 
 		// Column Offsets
 		&.column-offset-10
@@ -148,13 +134,24 @@
 			flex: 0 0 90%
 			max-width: 90%
 
-		// Larger than mobile screen
-		@media (min-width: 640px)
-			margin-bottom: inherit
-			padding: 0 1.0rem
+		// .column-* vertically aligns an individual .column
+		.column-top
+			align-self: flex-start
 
-	// Larger than mobile screen
-	@media (min-width: 640px)
+		.column-bottom
+			align-self: flex-end
+
+		.column-center
+			align-self: center
+
+// Larger than mobile screen
+@media (min-width: 40.0rem) // Safari desktop has a bug using `rem`, but Safari mobile works
+
+	.row
 		flex-direction: row
 		margin-left: -1.0rem
 		width: calc(100% + 2.0rem)
+
+		.column
+			margin-bottom: inherit
+			padding: 0 1.0rem

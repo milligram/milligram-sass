@@ -59,22 +59,22 @@ In this version, Milligram use [Sass](http://sass-lang.com/) to give super power
 .selector-b,
 .selector-c,
 .selector-d[type='text']
-    box-sizing: border-box
-    color: #333
-    content: ''
-    display: inline-block
-    font-family: 'Helvetica-Neue', 'Helvetica', 'Arial', sans-serif
+	box-sizing: border-box
+	color: #333
+	content: ''
+	display: inline-block
+	font-family: 'Helvetica-Neue', 'Helvetica', 'Arial', sans-serif
 	margin-bottom: 0
-    margin-left: 5.0rem
+	margin-left: 5.0rem
 
-    .other-selector-a
-    	background: #fff
+	.other-selector-a
+		background: #fff
 
-	.other-selector-b
-    	background: #fff
+		.other-selector-b
+			background: #fff
 
-	&.increasing-the-specificity
-    	color: #000
+		&.increasing-the-specificity
+			color: #000
 ```
 
 *Note: This style guide was inspired by [Idiomatic.css](https://github.com/necolas/idiomatic-css). Milligram uses an `.editorconfig` file, which most editors support, to enforce these coding standards.*
