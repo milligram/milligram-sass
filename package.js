@@ -1,6 +1,6 @@
 Package.describe({
   name: 'milligram:milligram-sass',
-  version: '1.4.0',
+  version: '1.4.1',
   summary: 'A minimalist CSS framework on Sass version.',
   git: 'https://github.com/milligram/milligram-sass.git',
   documentation: 'readme.md',
